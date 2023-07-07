@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_weight="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="50dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/Row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/LabelTextView1"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:text="Latitude"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/latitudeEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/LabelTextView2"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:text="Longitude"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/longiEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/LabelTextView3"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:text="Desc"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:text="Add" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Search string"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Search" />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
